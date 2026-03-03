@@ -1,0 +1,22 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# DO NOT commit terraform.tfvars – it is .gitignore'd.
+
+subscription_id     = "00000000-0000-0000-0000-000000000000"
+location            = "eastus2"
+resource_group_name = "governance-starter-rg"
+app_name            = "gov-starter"
+acr_name            = "govstarteracr"         # globally unique
+key_vault_name      = "gov-starter-kv"        # globally unique, 3-24 chars
+db_admin_user       = "govadmin"
+db_name             = "governance"
+image_tag           = "latest"
+
+# Entra ID authentication (optional)
+auth_enabled   = false
+entra_issuer   = ""  # "https://login.microsoftonline.com/<tenant-id>/v2.0"
+entra_audience = ""  # "api://<client-id>"
+
+tags = {
+  owner = "platform-team"
+  cost_center = "engineering"
+}
