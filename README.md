@@ -337,8 +337,12 @@ az containerapp exec \
 2. Run `make check` and `make test` before opening a PR.
 3. The CI workflow validates all PRs.
 
----
+## Example API Usage
 
-## License
+Create item
 
-[MIT](LICENSE)
+curl -X POST http://localhost:8000/items \
+  -H "Content-Type: application/json" \
+  -d '{"name":"example","description":"demo"}'
+
+
