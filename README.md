@@ -11,7 +11,7 @@ A production-grade FastAPI service demonstrating enterprise Azure patterns in a 
 │                        GitHub Actions                          │
 │   CI (lint/test) ──► Deploy (terraform + build + ACA update)  │
 └─────────────────────────────┬──────────────────────────────────┘
-                              │ OIDC (federated identity)
+                              │ 
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                         Azure                                   │
@@ -126,8 +126,8 @@ A production-grade FastAPI service demonstrating enterprise Azure patterns in a 
 
 ```bash
 # 1. Clone and enter the repo
-git clone https://github.com/<your-org>/fastapi-azure-ai-governance-starter.git
-cd fastapi-azure-ai-governance-starter
+git clone https://github.com/danabindra/fastapi-azure-ai-platform.git
+
 
 # 2. Copy env file
 cp .env.example .env
