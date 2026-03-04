@@ -20,11 +20,18 @@ A production-grade FastAPI service demonstrating enterprise Azure patterns in a 
 │   │                                                             │
 │   └─► Container Apps (FastAPI)                                  │
 │           │  Managed Identity                                   │
-│           ├─► Key Vault  (DB_PASSWORD secret)                   │
+│           ├─► Key Vault  (DB_PASSWORD)                   │
 │           ├─► App Insights / Log Analytics (OTel traces+logs)  │
 │           └─► PostgreSQL Flexible Server                        │
 └─────────────────────────────────────────────────────────────────┘
 ```
+
+
+FastAPI → Azure Container Apps  
+Managed Identity → Azure Key Vault  
+Postgres → Azure Database for PostgreSQL  
+Observability → OpenTelemetry + Azure Monitor  
+CI/CD → GitHub Actions + Terraform
 
 ### Component Responsibilities
 
