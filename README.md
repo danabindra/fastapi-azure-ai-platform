@@ -1,4 +1,4 @@
-# FastAPI Azure AI Governance Starter
+# FastAPI Azure AI Governance 
 
 A production-grade FastAPI service demonstrating enterprise Azure patterns in a minimal, runnable codebase. Deploy locally in minutes; promote to Azure Container Apps with Terraform and GitHub Actions OIDC — no long-lived credentials required.
 
